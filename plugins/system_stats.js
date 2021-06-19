@@ -48,7 +48,7 @@ else if (Config.WORKTYPE == 'public') {
 
         const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
         await message.sendMessage(
-            '```' + child + '```', MessageType.text
+            '```' + child + '```', MessageType.text,{quoted: message.data}
         );
     }));
     
@@ -56,7 +56,7 @@ else if (Config.WORKTYPE == 'public') {
 
         const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
         await message.sendMessage(
-            '```' + child + '```', MessageType.text
+            '```' + child + '```', MessageType.text,{quoted: message.data}
         );
     }));
 }
