@@ -692,7 +692,7 @@ else if (config.WORKTYPE == 'public') {
                 
                 stream.then(async (image) => {
                     await message.client.sendMessage(message.jid,image, MessageType.image,{quoted: message.data}
-                  );
+);
                 });
             }
 
@@ -958,7 +958,7 @@ else if (config.WORKTYPE == 'public') {
             return await message.client.sendMessage(
                 message.jid,
                 Clang.NOT,
-                MessageType.text, {quoted: message.data}
+                MessageType.text
             );
         }
     }));
