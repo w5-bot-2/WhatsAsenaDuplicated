@@ -643,7 +643,8 @@ else if (config.WORKTYPE == 'public') {
 
         yt.on('end', async () => {
             reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text);
-            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4, quoted: message.data});
+            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4, quoted: message.data}
+           );
         });
     }));
 
@@ -677,8 +678,7 @@ else if (config.WORKTYPE == 'public') {
             .page(match[1]);
 
         var info = await arama.rawContent();
-        await message.client.sendMessage(message.jid, info, MessageType.text,{quoted: message.data}
-       );
+        await message.client.sendMessage(message.jid, info, MessageType.text);
         await reply.delete();
     }));
 
@@ -691,8 +691,7 @@ else if (config.WORKTYPE == 'public') {
                 var stream = get.buffer();
                 
                 stream.then(async (image) => {
-                    await message.client.sendMessage(message.jid,image, MessageType.image,{quoted: message.data}
-);
+                    await message.client.sendMessage(message.jid,image, MessageType.image);
                 });
             }
 
