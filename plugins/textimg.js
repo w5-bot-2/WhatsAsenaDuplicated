@@ -415,7 +415,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://api.zeks.xyz/api/nulis?apikey=odsMYXx67ZhT38w5hp5mgRKO8En&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'W5-BOT'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, quoted: message.data, caption: 'W5-BOT'})
 
     }));
 
@@ -445,7 +445,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://api.zeks.xyz/api/matrix?apikey=odsMYXx67ZhT38w5hp5mgRKO8En&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'W5-BOT'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, quoted: message.data, caption: 'W5-BOT'})
 
     }));
 
@@ -455,7 +455,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://api.zeks.xyz/api/tfire?apikey=odsMYXx67ZhT38w5hp5mgRKO8En&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'W5-BOT'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, quoted: message.data, caption: 'W5-BOT'})
 
     }));
 
@@ -570,7 +570,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/sparkling?text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'W5-BOT'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, quoted: message.data, caption: 'W5-BOT'})
 
     }));
 
@@ -590,7 +590,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/gaming?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'W5-BOT'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, quoted: message.data, caption: 'W5-BOT'})
 
     }));
 
@@ -717,7 +717,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/text3d?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'W5-BOT'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, quoted: message.data, caption: 'W5-BOT'})
 
     }));
 }
