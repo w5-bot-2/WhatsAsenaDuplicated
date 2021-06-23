@@ -399,11 +399,11 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'sad ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'sadtext ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
   
-    var webimage = await axios.get(`http://lolhuman.herokuapp.com/api/ephoto1/wetglass?apikey=e228d999bd914b35bffb7546&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/wetglass?apikey=e228d999bd914b35bffb7546&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'W5-BOT'})
 
@@ -720,4 +720,104 @@ else if (Config.WORKTYPE == 'public') {
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, quoted: message.data, caption: 'W5-BOT'})
 
     }));
+    
+    Asena.addCommand({pattern: 'freefire ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+  
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/freefire?apikey=e228d999bd914b35bffb7546&text=${match[1]}`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'W5-BOT'})
+
+    }));
+    
+    Asena.addCommand({pattern: 'silverplaybutton ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+  
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/silverplaybutton?apikey=e228d999bd914b35bffb7546&text=${match[1]}`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'W5-BOT'})
+
+    }));
+    
+    Asena.addCommand({pattern: 'goldplaybutton ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+  
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/goldplaybutton?apikey=e228d999bd914b35bffb7546&text=${match[1]}`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'W5-BOT'})
+
+    }));
+    
+    Asena.addCommand({pattern: 'multicolor3d ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+  
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/multicolor3d?apikey=e228d999bd914b35bffb7546&text=${match[1]}`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'W5-BOT'})
+
+    }));
+    
+    Asena.addCommand({pattern: 'watercolor ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+  
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/watercolor?apikey=e228d999bd914b35bffb7546&text=${match[1]}`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'W5-BOT'})
+
+    }));
+    
+    Asena.addCommand({pattern: 'luxurygold ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+  
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/luxurygold?apikey=e228d999bd914b35bffb7546&text=${match[1]}`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'W5-BOT'})
+
+    }));
+    
+    Asena.addCommand({pattern: 'galaxywallpaper ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+  
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/galaxywallpaper?apikey=e228d999bd914b35bffb7546&text=${match[1]}`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'W5-BOT'})
+
+    }));
+    
+    Asena.addCommand({pattern: 'lighttext ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+  
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/lighttext?apikey=e228d999bd914b35bffb7546&text=${match[1]}`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'W5-BOT'})
+
+    }));
+    
+    Asena.addCommand({pattern: 'beautifulflower ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+  
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/beautifulflower?apikey=e228d999bd914b35bffb7546&text=${match[1]}`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'W5-BOT'})
+
+    }));
+    
+    Asena.addCommand({pattern: 'puppycute ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+  
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/puppycute?apikey=e228d999bd914b35bffb7546&text=${match[1]}`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'W5-BOT'})
+
+    }));   
 }
