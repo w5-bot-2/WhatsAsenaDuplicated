@@ -735,7 +735,7 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
   
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/silverplaybutton?apikey=98e16488375eceae95f96704&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.zeks.xyz/api/splaybutton?apikey=w6pOcZAlefcsPoNoFV8CzWpo9yT&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, quoted: message.data, caption: 'W5-BOT'})
 
@@ -745,7 +745,7 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
   
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/goldplaybutton?apikey=98e16488375eceae95f96704&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.zeks.xyz/api/gplaybutton?apikey=w6pOcZAlefcsPoNoFV8CzWpo9yT&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, quoted: message.data, caption: 'W5-BOT'})
 
@@ -811,11 +811,11 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
     
-    Asena.addCommand({pattern: 'puppycute ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'emoji ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
   
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/puppycute?apikey=98e16488375eceae95f96704&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.zeks.xyz/api/emoji-image?apikey=w6pOcZAlefcsPoNoFV8CzWpo9yT&emoji=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, quoted: message.data, caption: 'W5-BOT'})
 
