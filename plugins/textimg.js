@@ -875,7 +875,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
     
-    Asena.addCommand({pattern: 'marvelstudios ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'marvelstd ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
   
@@ -1011,7 +1011,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
     
-    Asena.addCommand({pattern: 'marvelstudios ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'codwarzone ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
   
