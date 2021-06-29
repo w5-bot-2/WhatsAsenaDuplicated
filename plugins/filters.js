@@ -65,28 +65,24 @@ Asena.addCommand({pattern: 'stop ?(.*)', fromMe: true, desc: Lang.STOP_DESC}, (a
 
 
 Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
-    var filtreler = await FilterDb.getFilter(message.jid);
-    if (!filtreler) return; 
-    return filtreler.map(
-        async (filter) => {
-            pattern = new RegExp(filter.dataValues.regex ? filter.dataValues.pattern : ('\\b(' + filter.dataValues.pattern + ')\\b'), 'gm');
-            if (message.message == filter.dataValues.pattern) {
-                await new Promise(r => setTimeout(r, 900));
-                return await message.client.sendMessage(message.jid,filter.dataValues.text, MessageType.text, {quoted: message.data});
-            }
+        if (!!message.mention && message.mention[0] == '917736807522@s.whatsapp.net') {
+await message.client.sendMessage(message.jid, fs.readFileSync('./mp3/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
         }
-    );
-}));
-Asena.addCommand({on: 'text', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+const array = ['Abdu','Bot','Friend','Friends','Hello','help','menu','Myr','Myre','thyr','thyre','Nanba','Nanban','Lub u','Anu','alive']
+array.map( async (a) => {
+let pattern = new RegExp(`\\b${a}\\b`, 'g');
+if(pattern.test(message.message)){
+       await message.client.sendMessage(message.jid, fs.readFileSync('./mp3/' + a + '.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: true})
+}
+});
+
     var filtreler = await FilterDb.getFilter(message.jid);
     if (!filtreler) return; 
-    return filtreler.map(
+    filtreler.map(
         async (filter) => {
             pattern = new RegExp(filter.dataValues.regex ? filter.dataValues.pattern : ('\\b(' + filter.dataValues.pattern + ')\\b'), 'gm');
-            var fo = message.message.replace('$', '')
-            if (fo == filter.dataValues.pattern && message.message.startsWith('$')) {
-                await new Promise(r => setTimeout(r, 100));
-                return await message.client.sendMessage(message.jid,filter.dataValues.text, MessageType.text, {quoted: message.data});
+            if (pattern.test(message.message)) {
+                await message.client.sendMessage(message.jid,filter.dataValues.text, MessageType.text, {quoted: message.data});
             }
         }
     );
