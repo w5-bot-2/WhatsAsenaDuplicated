@@ -255,8 +255,8 @@ Asena.addCommand({pattern: 'textbear ?(.*)', fromMe: wk, dontAddCommandList: tru
 }));
 Asena.addCommand({pattern: 'textwolf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes(';')) {
-        var split = match[1].split(';');
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -359,8 +359,8 @@ Asena.addCommand({pattern: 'textjoker ?(.*)', fromMe: wk, dontAddCommandList: tr
 }));
 Asena.addCommand({pattern: 'textninja ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes(';')) {
-        var split = match[1].split(';');
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -425,8 +425,8 @@ Asena.addCommand({pattern: 'textbokeh ?(.*)', fromMe: wk, dontAddCommandList: tr
 }));
 Asena.addCommand({pattern: 'textmarvel ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes(';')) {
-        var split = match[1].split(';');
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -453,8 +453,8 @@ Asena.addCommand({pattern: 'textmarvel ?(.*)', fromMe: wk, dontAddCommandList: t
 }));
 Asena.addCommand({pattern: 'text2marvel ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes(';')) {
-        var split = match[1].split(';');
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -481,8 +481,8 @@ Asena.addCommand({pattern: 'text2marvel ?(.*)', fromMe: wk, dontAddCommandList: 
 }));
 Asena.addCommand({pattern: 'textavengers ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes(';')) {
-        var split = match[1].split(';');
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -509,8 +509,8 @@ Asena.addCommand({pattern: 'textavengers ?(.*)', fromMe: wk, dontAddCommandList:
 }));
 Asena.addCommand({pattern: 'textglitch ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes(';')) {
-        var split = match[1].split(';');
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -537,8 +537,8 @@ Asena.addCommand({pattern: 'textglitch ?(.*)', fromMe: wk, dontAddCommandList: t
 }));
 Asena.addCommand({pattern: 'textgraf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes(';')) {
-        var split = match[1].split(';');
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -565,8 +565,8 @@ Asena.addCommand({pattern: 'textgraf ?(.*)', fromMe: wk, dontAddCommandList: tru
 }));
 Asena.addCommand({pattern: 'text2graf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes(';')) {
-        var split = match[1].split(';');
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -593,8 +593,8 @@ Asena.addCommand({pattern: 'text2graf ?(.*)', fromMe: wk, dontAddCommandList: tr
 }));
 Asena.addCommand({pattern: 'textlion ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes(';')) {
-        var split = match[1].split(';');
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -659,8 +659,8 @@ Asena.addCommand({pattern: 'textice ?(.*)', fromMe: wk, dontAddCommandList: true
 }));
 Asena.addCommand({pattern: 'textspace ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes(';')) {
-        var split = match[1].split(';');
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -850,8 +850,8 @@ Asena.addCommand({pattern: 'textbreakwall ?(.*)', fromMe: wk, dontAddCommandList
 }));
 Asena.addCommand({pattern: 'textpornhub ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes(';')) {
-        var split = match[1].split(';');
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -927,6 +927,148 @@ Asena.addCommand({pattern: 'textfoilballoon ?(.*)', fromMe: wk, dontAddCommandLi
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/foilballoon.jpg', async() => {                          
                   await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/foilballoon.jpg'), MessageType.image, { quoted: message.data, caption: 'W5-BOT' })
+              })
+          } catch(err) { 
+              console.log(err)
+          } 
+    });
+}));
+Asena.addCommand({pattern: 'textblood ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    thiccysapi.textpro("https://textpro.me/blood-text-on-the-frosted-glass-941.html",
+        `${match[1]}`
+        ).then(async (data) => { 
+          try { 
+              var download = async(uri, filename, callback) => {
+                  await request.head(uri, async(err, res, body) => {    
+                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+                  });
+              };
+
+              await download(`${data}`, '/root/WhatsAsenaDuplicated/blood.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/blood.jpg'), MessageType.image, { quoted: message.data, caption: 'W5-BOT' })
+              })
+          } catch(err) { 
+              console.log(err)
+          } 
+    });
+}));
+Asena.addCommand({pattern: 'textmatrix ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    thiccysapi.textpro("https://textpro.me/matrix-style-text-effect-online-884.html",
+        `${match[1]}`
+        ).then(async (data) => { 
+          try { 
+              var download = async(uri, filename, callback) => {
+                  await request.head(uri, async(err, res, body) => {    
+                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+                  });
+              };
+
+              await download(`${data}`, '/root/WhatsAsenaDuplicated/matrix.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/matrix.jpg'), MessageType.image, { quoted: message.data, caption: 'W5-BOT' })
+              })
+          } catch(err) { 
+              console.log(err)
+          } 
+    });
+}));
+Asena.addCommand({pattern: 'textthunder ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    thiccysapi.textpro("https://textpro.me/create-thunder-text-effect-online-881.html",
+        `${match[1]}`
+        ).then(async (data) => { 
+          try { 
+              var download = async(uri, filename, callback) => {
+                  await request.head(uri, async(err, res, body) => {    
+                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+                  });
+              };
+
+              await download(`${data}`, '/root/WhatsAsenaDuplicated/thunder.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/thunder.jpg'), MessageType.image, { quoted: message.data, caption: 'W5-BOT' })
+              })
+          } catch(err) { 
+              console.log(err)
+          } 
+    });
+}));
+Asena.addCommand({pattern: 'textfoggy ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    thiccysapi.textpro("https://textpro.me/write-text-on-foggy-window-online-free-1015.html",
+        `${match[1]}`
+        ).then(async (data) => { 
+          try { 
+              var download = async(uri, filename, callback) => {
+                  await request.head(uri, async(err, res, body) => {    
+                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+                  });
+              };
+
+              await download(`${data}`, '/root/WhatsAsenaDuplicated/foggy.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/foggy.jpg'), MessageType.image, { quoted: message.data, caption: 'W5-BOT' })
+              })
+          } catch(err) { 
+              console.log(err)
+          } 
+    });
+}));
+Asena.addCommand({pattern: 'text3graf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    thiccysapi.textpro("https://textpro.me/create-wonderful-graffiti-art-text-effect-1011.html",
+        `${match[1]}`
+        ).then(async (data) => { 
+          try { 
+              var download = async(uri, filename, callback) => {
+                  await request.head(uri, async(err, res, body) => {    
+                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+                  });
+              };
+
+              await download(`${data}`, '/root/WhatsAsenaDuplicated/grafitti3.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/grafitti3.jpg'), MessageType.image, { quoted: message.data, caption: 'W5-BOT' })
+              })
+          } catch(err) { 
+              console.log(err)
+          } 
+    });
+}));
+Asena.addCommand({pattern: 'text3dunderwater ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    thiccysapi.textpro("https://textpro.me/3d-underwater-text-effect-generator-online-1013.html",
+        `${match[1]}`
+        ).then(async (data) => { 
+          try { 
+              var download = async(uri, filename, callback) => {
+                  await request.head(uri, async(err, res, body) => {    
+                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+                  });
+              };
+
+              await download(`${data}`, '/root/WhatsAsenaDuplicated/3Dunderwater.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/3Dunderwater.jpg'), MessageType.image, { quoted: message.data, caption: 'W5-BOT' })
+              })
+          } catch(err) { 
+              console.log(err)
+          } 
+    });
+}));
+Asena.addCommand({pattern: 'text2glitch ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    var topText, bottomText; 
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
+        topText = split[0];
+        bottomText = split[1];
+    } else {
+        topText = match[1];
+        bottomText = '';
+    }
+    thiccysapi.textpro("https://textpro.me/create-a-glitch-text-effect-online-free-1026.html",
+        [`${topText}`, `${bottomText}`]
+        ).then(async (data) => { 
+          try { 
+              var download = async(uri, filename, callback) => {
+                  await request.head(uri, async(err, res, body) => {    
+                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+                  });
+              };
+
+              await download(`${data}`, '/root/WhatsAsenaDuplicated/glitch2.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/glitch2.jpg'), MessageType.image, { quoted: message.data, caption: 'W5-BOT' })
               })
           } catch(err) { 
               console.log(err)
