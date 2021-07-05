@@ -255,8 +255,8 @@ Asena.addCommand({pattern: 'textbear ?(.*)', fromMe: wk, dontAddCommandList: tru
 }));
 Asena.addCommand({pattern: 'textwolf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
+    if (match[1].includes(';')) {
+        var split = match[1].split(';');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -359,8 +359,8 @@ Asena.addCommand({pattern: 'textjoker ?(.*)', fromMe: wk, dontAddCommandList: tr
 }));
 Asena.addCommand({pattern: 'textninja ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
+    if (match[1].includes(';')) {
+        var split = match[1].split(';');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -425,8 +425,8 @@ Asena.addCommand({pattern: 'textbokeh ?(.*)', fromMe: wk, dontAddCommandList: tr
 }));
 Asena.addCommand({pattern: 'textmarvel ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
+    if (match[1].includes(';')) {
+        var split = match[1].split(';');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -453,8 +453,8 @@ Asena.addCommand({pattern: 'textmarvel ?(.*)', fromMe: wk, dontAddCommandList: t
 }));
 Asena.addCommand({pattern: 'text2marvel ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
+    if (match[1].includes(';')) {
+        var split = match[1].split(';');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -481,8 +481,8 @@ Asena.addCommand({pattern: 'text2marvel ?(.*)', fromMe: wk, dontAddCommandList: 
 }));
 Asena.addCommand({pattern: 'textavengers ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
+    if (match[1].includes(';')) {
+        var split = match[1].split(';');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -509,8 +509,8 @@ Asena.addCommand({pattern: 'textavengers ?(.*)', fromMe: wk, dontAddCommandList:
 }));
 Asena.addCommand({pattern: 'textglitch ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
+    if (match[1].includes(';')) {
+        var split = match[1].split(';');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -537,8 +537,8 @@ Asena.addCommand({pattern: 'textglitch ?(.*)', fromMe: wk, dontAddCommandList: t
 }));
 Asena.addCommand({pattern: 'textgraf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
+    if (match[1].includes(';')) {
+        var split = match[1].split(';');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -565,8 +565,8 @@ Asena.addCommand({pattern: 'textgraf ?(.*)', fromMe: wk, dontAddCommandList: tru
 }));
 Asena.addCommand({pattern: 'text2graf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
+    if (match[1].includes(';')) {
+        var split = match[1].split(';');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -593,8 +593,8 @@ Asena.addCommand({pattern: 'text2graf ?(.*)', fromMe: wk, dontAddCommandList: tr
 }));
 Asena.addCommand({pattern: 'textlion ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
+    if (match[1].includes(';')) {
+        var split = match[1].split(';');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -659,8 +659,8 @@ Asena.addCommand({pattern: 'textice ?(.*)', fromMe: wk, dontAddCommandList: true
 }));
 Asena.addCommand({pattern: 'textspace ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
+    if (match[1].includes(';')) {
+        var split = match[1].split(';');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -850,8 +850,8 @@ Asena.addCommand({pattern: 'textbreakwall ?(.*)', fromMe: wk, dontAddCommandList
 }));
 Asena.addCommand({pattern: 'textpornhub ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
+    if (match[1].includes(';')) {
+        var split = match[1].split(';');
         topText = split[0];
         bottomText = split[1];
     } else {
@@ -1049,8 +1049,8 @@ Asena.addCommand({pattern: 'text3dunderwater ?(.*)', fromMe: wk, dontAddCommandL
 }));
 Asena.addCommand({pattern: 'text2glitch ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
+    if (match[1].includes(';')) {
+        var split = match[1].split(';');
         topText = split[0];
         bottomText = split[1];
     } else {
