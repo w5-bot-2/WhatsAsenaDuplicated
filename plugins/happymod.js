@@ -19,10 +19,10 @@ Asena.addCommand({pattern: 'happymod ?(.*)', fromMe: false, desc: Lang.HMODD_DES
 		const response = await got(url);
 		const json = JSON.parse(response.body);
 		if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 
-		'*🔰 ' + TITLE +':* ```' + json.result[0].title + '```\n\n' +
-		'*🔰 ' + URL +':* ```' + json.result[0].url + '```\n\n' +									 
-		'*🔰 ' + RATING +':* ```' + json.result[0].rating + '```\n\n\n' + 
-		'*🔰 ' + THUMBNAIL +':* ```' + json.result[0].thumb + '```\n', MessageType.text);
+		'*🔰 ' + Lang.TITLE +':* ```' + json.result[0].title + '```\n\n' +
+		'*🔰 ' + Lang.URL +':* ```' + json.result[0].url + '```\n\n' +									 
+		'*🔰 ' + Lang.RATING +':* ```' + json.result[0].rating + '```\n\n\n' + 
+		'*🔰 ' + Lang.THUMB +':* ```' + json.result[0].thumb + '```\n', MessageType.text);
 	} catch {
 		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text , {quoted: message.data});
 	}
@@ -34,13 +34,13 @@ Asena.addCommand({pattern: 'playstore ?(.*)', fromMe: false, desc: Lang.HMODD_DE
 		const response = await got(url);
 		const json = JSON.parse(response.body);
 		if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 
-		'*🔰 ' + TITLE +':* ```' + json.result[0].title + '```\n\n' +
-		'*🔰 ' + APP_ID +':* ```' + json.result[0].appid + '```\n\n' +
-		'*🔰 ' + DEVELOPER +':* ```' + json.result[0].developer + '```\n\n' +									 
-		'*🔰 ' + PRICE +':* ```' + json.result[0].url + '```\n\n' +									 
-		'*🔰 ' + RATING +':* ```' + json.result[0].rating + '```\n\n\n' +
-		'*🔰 ' + URL +':* ```' + json.result[0].url + '```\n\n\n' +									 
-		'*🔰 ' + THUMB +':* ```' + json.result[0].thumb + '```\n', MessageType.text);
+		'*🔰 ' + Lang.TITLE +':* ```' + json.result[0].title + '```\n\n' +
+		'*🔰 ' + Lang.APP_ID +':* ```' + json.result[0].appid + '```\n\n' +
+		'*🔰 ' + Lang.DEVELOPER +':* ```' + json.result[0].developer + '```\n\n' +									 
+		'*🔰 ' + Lang.PRICE +':* ```' + json.result[0].url + '```\n\n' +									 
+		'*🔰 ' + Lang.RATING +':* ```' + json.result[0].rating + '```\n\n\n' +
+		'*🔰 ' + Lang.URL +':* ```' + json.result[0].url + '```\n\n\n' +									 
+		'*🔰 ' + Lang.THUMB +':* ```' + json.result[0].thumb + '```\n', MessageType.text);
 	} catch {
 		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text , {quoted: message.data});
 	}
