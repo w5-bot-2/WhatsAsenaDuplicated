@@ -67,6 +67,7 @@ Asena.addCommand({pattern: 'textmaker$', fromMe: wk, desc: desc_msg}, (async (me
     var t32 = ''
     var t33 = ''
     var t34 = ''
+    var t35 = ''
     if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
         t1 = 'Şeytan Temalı Logo Yapar.' // https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html
         t2 = 'Ayı İkonu İçeren Logo Yapar.' // https://textpro.me/online-black-and-white-bear-mascot-logo-creation-1012.html
@@ -101,6 +102,7 @@ Asena.addCommand({pattern: 'textmaker$', fromMe: wk, desc: desc_msg}, (async (me
         t32 = 'Makes a Pornhub Style Logo.' // https://textpro.me/pornhub-style-logo-online-generator-free-977.html
         t33 = 'Makes a Write text on wet glass logo.' // https://en.ephoto360.com/write-text-on-wet-glass-online-589.html
         t34 = 'Makes a Create anonymous hacker avatars cyan neon logo.' // https://en.ephoto360.com/create-anonymous-hacker-avatars-cyan-neon-677.html
+        t35 = 'Makes a Create anonymous hacker avatars cyan neon logo.' // https://en.ephoto360.com/create-anonymous-hacker-avatars-cyan-neon-677.html
     }
     else {
         t1 = 'Makes Devil Themed Logo.' // https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html
@@ -135,7 +137,15 @@ Asena.addCommand({pattern: 'textmaker$', fromMe: wk, desc: desc_msg}, (async (me
         t31 = 'Makes a Break Wall Text Effect logo.' // https://textpro.me/break-wall-text-effect-871.html
         t32 = 'Makes a Pornhub Style Logo.' // https://textpro.me/pornhub-style-logo-online-generator-free-977.html
         t33 = 'Makes a Write text on wet glass logo.' // https://en.ephoto360.com/write-text-on-wet-glass-online-589.html
-        t34 = 'Makes a Create anonymous hacker avatars cyan neon logo.' // https://en.ephoto360.com/create-anonymous-hacker-avatars-cyan-neon-677.html    
+        t34 = 'Makes a Create anonymous hacker avatars cyan neon logo.' // https://en.ephoto360.com/create-anonymous-hacker-avatars-cyan-neon-677.html
+        t35 = 'Makes a Foil Balloon Text Effect For Birthday.' // https://en.ephoto360.com/create-anonymous-hacker-avatars-cyan-neon-677.html
+        t36 = '.'
+        t37 = 'Makes a Foil Balloon Text Effect For Birthday.'
+        t38 = 'Makes a Foil Balloon Text Effect For Birthday.'
+        t39 = 'Makes a Foil Balloon Text Effect For Birthday.'
+        t40 = 'Makes a Foil Balloon Text Effect For Birthday.'
+        t41 = 'Makes a Foil Balloon Text Effect For Birthday.'
+        t42 = 'Makes a Foil Balloon Text Effect For Birthday.'
     }
     var usage_cmd = ''
     var command_cmd = ''
@@ -168,7 +178,7 @@ Asena.addCommand({pattern: 'textmaker$', fromMe: wk, desc: desc_msg}, (async (me
         command_cmd + '```.text2graf``` \n' + desc_cmd + t16 + '_\n' + usage_cmd + '.text2graf Demigod;W5-BOT_\n\n' +       
         command_cmd + '```.textlion``` \n' + desc_cmd + t17 + '_\n' + usage_cmd + '.textlion Demigod;W5-BOT_\n\n' +
         command_cmd + '```.textice``` \n' + desc_cmd + t19 + '_\n' + usage_cmd + '.textice DEMIGOD PC_\n\n' +
-        command_cmd + '```.textspace``` \n' + desc_cmd + t20 + '_\n' + usage_cmd + '.textspace Demigod;Phaticusthiccy_\n\n' +
+        command_cmd + '```.textspace``` \n' + desc_cmd + t20 + '_\n' + usage_cmd + '.textspace Demigod;W5-BOT_\n\n' +
         command_cmd + '```.textsmoke``` \n' + desc_cmd + t21 + '_\n' + usage_cmd + '.textsmoke DEMIGOD PC_\n\n' + // Thanks for @Unique_hunter for base.
         command_cmd + '```.textglow``` \n' + desc_cmd + t23 + '_\n' + usage_cmd + '.textglow DEMIGOD PC_\n\n' +
         command_cmd + '```.textfire``` \n' + desc_cmd + t25 + '_\n' + usage_cmd + '.textfire DEMIGOD PC_\n\n' +
@@ -180,6 +190,14 @@ Asena.addCommand({pattern: 'textmaker$', fromMe: wk, desc: desc_msg}, (async (me
         command_cmd + '```.textbreakwall``` \n' + desc_cmd + t31 + '_\n' + usage_cmd + '.textbreakwall DEMIGOD PC_\n\n' +
         command_cmd + '```.textpornhub``` \n' + desc_cmd + t32 + '_\n' + usage_cmd + '.textpornhub DEMIGOD;PC_\n\n' +
         command_cmd + '```.textsad``` \n' + desc_cmd + t33 + '_\n' + usage_cmd + '.textsad DEMIGOD PC_\n\n' +
+        command_cmd + '```.textfoilballoon``` \n' + desc_cmd + t35 + '_\n' + usage_cmd + '.textfoilballoon DEMIGOD PC_\n\n' +
+        command_cmd + '```.textblood``` \n' + desc_cmd + t36 + '_\n' + usage_cmd + '.textblood DEMIGOD PC_\n\n' +
+        command_cmd + '```.textmatrix``` \n' + desc_cmd + t37 + '_\n' + usage_cmd + '.textmatrix DEMIGOD PC_\n\n' +
+        command_cmd + '```.textthunder``` \n' + desc_cmd + t38 + '_\n' + usage_cmd + '.textthunder DEMIGOD PC_\n\n' +
+        command_cmd + '```.textfoggy``` \n' + desc_cmd + t39 + '_\n' + usage_cmd + '.textfoggy DEMIGOD PC_\n\n' +
+        command_cmd + '```.text3graf``` \n' + desc_cmd + t40 + '_\n' + usage_cmd + '.text3graf DEMIGOD PC_\n\n' +
+        command_cmd + '```.text3dunderwater``` \n' + desc_cmd + t41 + '_\n' + usage_cmd + '.text3dunderwater DEMIGOD PC_\n\n' +
+        command_cmd + '```.text2glitch``` \n' + desc_cmd + t42 + '_\n' + usage_cmd + '.text2glitch DEMIGOD/W5-BOT_\n\n' +  
         command_cmd + '```.textanonymous``` \n' + desc_cmd + t34 + '_\n' + usage_cmd + '.textanonymous DEMIGOD PC_'  
     await message.client.sendMessage(message.jid,msg, MessageType.text, { quoted: message.data })
 }));
