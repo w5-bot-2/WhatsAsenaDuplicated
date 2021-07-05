@@ -80,7 +80,7 @@ else if (Config.WORKTYPE == 'public') {
         '*📱' + MOBILE +'* ```' + ipjson.mobile+ '```\n', MessageType.text);
 	} 
     catch {
-		return await message.client.sendMessage(message.jid, NOT_FOUNDIP, MessageType.text);
+		return await message.client.sendMessage(message.jid, NOT_FOUNDIP, MessageType.text , {quoted: message.data});
 	}
  });
 }
