@@ -67,14 +67,6 @@ Asena.addCommand({pattern: 'textmaker$', fromMe: wk, desc: desc_msg}, (async (me
     var t32 = ''
     var t33 = ''
     var t34 = ''
-    var t35 = ''
-    var t36 = ''
-    var t37 = ''
-    var t38 = ''
-    var t39 = ''
-    var t40 = ''
-    var t41 = ''
-    var t42 = ''
     if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
         t1 = 'Şeytan Temalı Logo Yapar.' // https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html
         t2 = 'Ayı İkonu İçeren Logo Yapar.' // https://textpro.me/online-black-and-white-bear-mascot-logo-creation-1012.html
@@ -109,14 +101,6 @@ Asena.addCommand({pattern: 'textmaker$', fromMe: wk, desc: desc_msg}, (async (me
         t32 = 'Makes a Pornhub Style Logo.' // https://textpro.me/pornhub-style-logo-online-generator-free-977.html
         t33 = 'Makes a Write text on wet glass logo.' // https://en.ephoto360.com/write-text-on-wet-glass-online-589.html
         t34 = 'Makes a Create anonymous hacker avatars cyan neon logo.' // https://en.ephoto360.com/create-anonymous-hacker-avatars-cyan-neon-677.html
-        t35 = 'Makes a Foil Balloon Text Effect For Birthday.'
-        t36 = 'Makes a Blood Text On The Frosted Glass.'
-        t37 = 'Makes a Matrix Style Text Effect.'
-        t38 = 'Makes a Create Thunder Text Effect.'
-        t39 = 'Makes a Write text on foggy window.'
-        t40 = 'Makes a Create wonderful graffiti art text effect.'
-        t41 = 'Makes a 3D underwater text effect generator.'
-        t42 = 'Makes a Create a glitch text effect.'
     }
     else {
         t1 = 'Makes Devil Themed Logo.' // https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html
@@ -152,14 +136,6 @@ Asena.addCommand({pattern: 'textmaker$', fromMe: wk, desc: desc_msg}, (async (me
         t32 = 'Makes a Pornhub Style Logo.' // https://textpro.me/pornhub-style-logo-online-generator-free-977.html
         t33 = 'Makes a Write text on wet glass logo.' // https://en.ephoto360.com/write-text-on-wet-glass-online-589.html
         t34 = 'Makes a Create anonymous hacker avatars cyan neon logo.' // https://en.ephoto360.com/create-anonymous-hacker-avatars-cyan-neon-677.html
-        t35 = 'Makes a Foil Balloon Text Effect For Birthday.'
-        t36 = 'Makes a Blood Text On The Frosted Glass.'
-        t37 = 'Makes a Matrix Style Text Effect.'
-        t38 = 'Makes a Create Thunder Text Effect.'
-        t39 = 'Makes a Write text on foggy window.'
-        t40 = 'Makes a Create wonderful graffiti art text effect.'
-        t41 = 'Makes a 3D underwater text effect generator.'
-        t42 = 'Makes a Create a glitch text effect.'
     }
     var usage_cmd = ''
     var command_cmd = ''
@@ -203,15 +179,7 @@ Asena.addCommand({pattern: 'textmaker$', fromMe: wk, desc: desc_msg}, (async (me
         command_cmd + '```.textdropwater``` \n' + desc_cmd + t30 + '_\n' + usage_cmd + '.textdropwater DEMIGOD PC_\n\n' +
         command_cmd + '```.textbreakwall``` \n' + desc_cmd + t31 + '_\n' + usage_cmd + '.textbreakwall DEMIGOD PC_\n\n' +
         command_cmd + '```.textpornhub``` \n' + desc_cmd + t32 + '_\n' + usage_cmd + '.textpornhub DEMIGOD;PC_\n\n' +
-        command_cmd + '```.textsad``` \n' + desc_cmd + t33 + '_\n' + usage_cmd + '.textsad DEMIGOD PC_\n\n' +
-        command_cmd + '```.textfoilballoon``` \n' + desc_cmd + t35 + '_\n' + usage_cmd + '.textfoilballoon DEMIGOD PC_\n\n' +
-        command_cmd + '```.textblood``` \n' + desc_cmd + t36 + '_\n' + usage_cmd + '.textblood DEMIGOD PC_\n\n' +
-        command_cmd + '```.textmatrix``` \n' + desc_cmd + t37 + '_\n' + usage_cmd + '.textmatrix DEMIGOD PC_\n\n' +
-        command_cmd + '```.textthunder``` \n' + desc_cmd + t38 + '_\n' + usage_cmd + '.textthunder DEMIGOD PC_\n\n' +
-        command_cmd + '```.textfoggy``` \n' + desc_cmd + t39 + '_\n' + usage_cmd + '.textfoggy DEMIGOD PC_\n\n' +
-        command_cmd + '```.text3graf``` \n' + desc_cmd + t40 + '_\n' + usage_cmd + '.text3graf DEMIGOD PC_\n\n' +
-        command_cmd + '```.text3dunderwater``` \n' + desc_cmd + t41 + '_\n' + usage_cmd + '.text3dunderwater DEMIGOD PC_\n\n' +
-        command_cmd + '```.text2glitch``` \n' + desc_cmd + t42 + '_\n' + usage_cmd + '.text2glitch DEMIGOD/W5-BOT_\n\n' +  
+        command_cmd + '```.textsad``` \n' + desc_cmd + t33 + '_\n' + usage_cmd + '.textsad DEMIGOD PC_\n\n' + 
         command_cmd + '```.textanonymous``` \n' + desc_cmd + t34 + '_\n' + usage_cmd + '.textanonymous DEMIGOD PC_'  
     await message.client.sendMessage(message.jid,msg, MessageType.text, { quoted: message.data })
 }));
@@ -908,167 +876,6 @@ Asena.addCommand({pattern: 'textanonymous ?(.*)', fromMe: wk, dontAddCommandList
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/anonymous.jpg', async() => {                          
                   await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/anonymous.jpg'), MessageType.image, { quoted: message.data, caption: 'W5-BOT' })
-              })
-          } catch(err) { 
-              console.log(err)
-          } 
-    });
-}));
-Asena.addCommand({pattern: 'textfoilballoon ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/foil-balloon-text-effect-for-birthday-987.html",
-        `${match[1]}`
-        ).then(async (data) => { 
-          try { 
-              var download = async(uri, filename, callback) => {
-                  await request.head(uri, async(err, res, body) => {    
-                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
-                  });
-              };
-
-              await download(`${data}`, '/root/WhatsAsenaDuplicated/foilballoon.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/foilballoon.jpg'), MessageType.image, { quoted: message.data, caption: 'W5-BOT' })
-              })
-          } catch(err) { 
-              console.log(err)
-          } 
-    });
-}));
-Asena.addCommand({pattern: 'textblood ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/blood-text-on-the-frosted-glass-941.html",
-        `${match[1]}`
-        ).then(async (data) => { 
-          try { 
-              var download = async(uri, filename, callback) => {
-                  await request.head(uri, async(err, res, body) => {    
-                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
-                  });
-              };
-
-              await download(`${data}`, '/root/WhatsAsenaDuplicated/blood.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/blood.jpg'), MessageType.image, { quoted: message.data, caption: 'W5-BOT' })
-              })
-          } catch(err) { 
-              console.log(err)
-          } 
-    });
-}));
-Asena.addCommand({pattern: 'textmatrix ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/matrix-style-text-effect-online-884.html",
-        `${match[1]}`
-        ).then(async (data) => { 
-          try { 
-              var download = async(uri, filename, callback) => {
-                  await request.head(uri, async(err, res, body) => {    
-                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
-                  });
-              };
-
-              await download(`${data}`, '/root/WhatsAsenaDuplicated/matrix.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/matrix.jpg'), MessageType.image, { quoted: message.data, caption: 'W5-BOT' })
-              })
-          } catch(err) { 
-              console.log(err)
-          } 
-    });
-}));
-Asena.addCommand({pattern: 'textthunder ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/create-thunder-text-effect-online-881.html",
-        `${match[1]}`
-        ).then(async (data) => { 
-          try { 
-              var download = async(uri, filename, callback) => {
-                  await request.head(uri, async(err, res, body) => {    
-                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
-                  });
-              };
-
-              await download(`${data}`, '/root/WhatsAsenaDuplicated/thunder.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/thunder.jpg'), MessageType.image, { quoted: message.data, caption: 'W5-BOT' })
-              })
-          } catch(err) { 
-              console.log(err)
-          } 
-    });
-}));
-Asena.addCommand({pattern: 'textfoggy ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/write-text-on-foggy-window-online-free-1015.html",
-        `${match[1]}`
-        ).then(async (data) => { 
-          try { 
-              var download = async(uri, filename, callback) => {
-                  await request.head(uri, async(err, res, body) => {    
-                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
-                  });
-              };
-
-              await download(`${data}`, '/root/WhatsAsenaDuplicated/foggy.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/foggy.jpg'), MessageType.image, { quoted: message.data, caption: 'W5-BOT' })
-              })
-          } catch(err) { 
-              console.log(err)
-          } 
-    });
-}));
-Asena.addCommand({pattern: 'text3graf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/create-wonderful-graffiti-art-text-effect-1011.html",
-        `${match[1]}`
-        ).then(async (data) => { 
-          try { 
-              var download = async(uri, filename, callback) => {
-                  await request.head(uri, async(err, res, body) => {    
-                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
-                  });
-              };
-
-              await download(`${data}`, '/root/WhatsAsenaDuplicated/grafitti3.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/grafitti3.jpg'), MessageType.image, { quoted: message.data, caption: 'W5-BOT' })
-              })
-          } catch(err) { 
-              console.log(err)
-          } 
-    });
-}));
-Asena.addCommand({pattern: 'text3dunderwater ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/3d-underwater-text-effect-generator-online-1013.html",
-        `${match[1]}`
-        ).then(async (data) => { 
-          try { 
-              var download = async(uri, filename, callback) => {
-                  await request.head(uri, async(err, res, body) => {    
-                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
-                  });
-              };
-
-              await download(`${data}`, '/root/WhatsAsenaDuplicated/3Dunderwater.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/3Dunderwater.jpg'), MessageType.image, { quoted: message.data, caption: 'W5-BOT' })
-              })
-          } catch(err) { 
-              console.log(err)
-          } 
-    });
-}));
-Asena.addCommand({pattern: 'text2glitch ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    var topText, bottomText; 
-    if (match[1].includes(';')) {
-        var split = match[1].split(';');
-        topText = split[0];
-        bottomText = split[1];
-    } else {
-        topText = match[1];
-        bottomText = '';
-    }
-    thiccysapi.textpro("https://textpro.me/create-a-glitch-text-effect-online-free-1026.html",
-        [`${topText}`, `${bottomText}`]
-        ).then(async (data) => { 
-          try { 
-              var download = async(uri, filename, callback) => {
-                  await request.head(uri, async(err, res, body) => {    
-                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
-                  });
-              };
-
-              await download(`${data}`, '/root/WhatsAsenaDuplicated/glitch2.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/glitch2.jpg'), MessageType.image, { quoted: message.data, caption: 'W5-BOT' })
               })
           } catch(err) { 
               console.log(err)
