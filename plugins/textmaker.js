@@ -180,7 +180,7 @@ Asena.addCommand({pattern: 'textmaker$', fromMe: wk, desc: desc_msg}, (async (me
         command_cmd + '```.textdropwater``` \n' + desc_cmd + t31 + '_\n' + usage_cmd + '.textdropwater DEMIGOD_\n\n' +
         command_cmd + '```.textthunder``` \n' + desc_cmd + t32 + '_\n' + usage_cmd + '.textthunder DEMIGOD_\n\n' +
         command_cmd + '```.text2glitch``` \n' + desc_cmd + t33 + '_\n' + usage_cmd + '.text2glitch DEMIGOD;W5-BOT_\n\n' +
-        command_cmd + '```.textpornhub``` \n' + desc_cmd + t34 + '_\n' + usage_cmd + '.textpornhub DEMIGOD;W5-BOT_\n\n' +  
+        command_cmd + '```.textpornhub``` \n' + desc_cmd + t34 + '_\n' + usage_cmd + '.textpornhub DEMIGOD;W5-BOT_'  
     await message.client.sendMessage(message.jid,msg, MessageType.text, { quoted: message.data })
 }));
 Asena.addCommand({pattern: 'textdevil ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
