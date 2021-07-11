@@ -817,7 +817,7 @@ else if (Config.WORKTYPE == 'public') {
   
     var webimage = await axios.get(`https://api.zeks.xyz/api/emoji-image?apikey=w6pOcZAlefcsPoNoFV8CzWpo9yT&emoji=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, quoted: message.data, caption: 'W5-BOT'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {filename: 'W5-BOT.png', mimetype: Mimetype.jpg, quoted: message.data})
 
     }));
     
